@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "build-css": "tailwindcss -i ./src/index.css -o ./dist/output.css",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "build-css": "tailwindcss -i ./src/index.css -o ./dist/output.css",
+    "react-router-dom": "^7.7.0",
     "watch-css": "tailwindcss -i ./src/index.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
