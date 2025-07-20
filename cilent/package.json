@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
     "build-css": "tailwindcss -i ./src/index.css -o ./dist/output.css",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^7.7.0",
     "watch-css": "tailwindcss -i ./src/index.css -o ./dist/output.css --watch"
   },
