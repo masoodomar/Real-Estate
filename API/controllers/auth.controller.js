@@ -1,6 +1,7 @@
 import user from "../Modules/user.modules.js"; // Import user modules
 import bcrypt from "bcryptjs";
-export const signup =async (req, res) => {
+import { errorHandler } from "../utils/error.js";
+export const signup =async (req, res, next) => {
     console.log(req.body);
     const { username, email,password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10); // Hash the password
@@ -11,6 +12,6 @@ export const signup =async (req, res) => {
 
     }
     catch (error) {
-        res.status(500).json(error.message); // Handle errors
+        next(errorHandler(550 , 'error from the function')); // Handle errors
     }
 }
