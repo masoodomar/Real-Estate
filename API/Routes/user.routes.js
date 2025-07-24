@@ -5,5 +5,5 @@ const router = express.Router();
 
 router.get("/test", test); // Define a route for testing
 
-    export default router;
+export default router;
     
